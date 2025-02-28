@@ -1,0 +1,62 @@
+.register .formBox {
+    background-color: var(--color);
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.register .row p {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.register .navLink {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: rgb(28, 28, 28);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem ;
+}
+
+.register .navLink:hover {
+    color: rgb(28, 28, 28);
+    background-color: var(--color);
+    font-weight: 600;
+    border : 3px solid rgb(28, 28, 28);
+}
+
+.register button {
+    background-color: var(--color);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    outline:  none;
+    border : none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.register button:hover {
+    color: var(--color);
+    background-color: rgb(28, 28, 28);
+    border : 3px solid var(--color);
+}
+
+.register input {
+    background-color: var(--color);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.register input::placeholder {
+    color: rgb(28, 28, 28);
+    box-shadow: none;
+}
+
+.register input:focus {
+    box-shadow: none;
+    background-color: var(--color);
+}

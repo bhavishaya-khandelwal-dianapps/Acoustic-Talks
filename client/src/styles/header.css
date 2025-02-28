@@ -1,0 +1,64 @@
+.header {
+    background-color: var(--color);
+    height: 120px;
+    position: relative;
+}
+
+.header h2 {
+    color: rgb(28, 28, 28);
+    padding: 0.3rem 1rem;
+    border-radius: 1.2rem; 
+    margin: 0;
+    font-weight: 500;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header  .navLink {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--color);
+    background-color: rgb(28, 28, 28);
+    padding: 0.4rem 0.9rem;
+    border-radius : 1rem;
+}
+
+.header .themeBtn {
+    font-size: 2.5rem;
+    color: rgb(28, 28, 28);
+    cursor: pointer;
+}
+
+.header .menuBox {
+    height: 55vh;
+    width: 12rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: height 0.5s ease-in-out;
+    animation: menuBoxAnimation 0.5s ease-in-out;
+    border-radius: 2rem;
+    background-color: var(--color);
+}
+
+.menuBox ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+@keyframes menuBoxAnimation {
+    from {
+        height: 30vh;
+        background-color: rgb(0, 0, 0);
+    }
+    to {
+        height: 55vh;
+        background-color: var(--color);
+    }
+}

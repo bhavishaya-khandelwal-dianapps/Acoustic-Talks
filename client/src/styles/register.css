@@ -54,6 +54,7 @@
 .register input::placeholder {
     color: rgb(28, 28, 28);
     box-shadow: none;
+    background-color: var(--color);
 }
 
 .register input:focus {

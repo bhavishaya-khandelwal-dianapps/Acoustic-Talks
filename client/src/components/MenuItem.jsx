@@ -4,12 +4,12 @@ import { IoColorPaletteSharp } from "react-icons/io5";
 
 
 const colors = [
-  "rgba(47, 229, 47, 0.719)", 
-  "rgba(47, 102, 229, 0.719)",
-  "rgba(165, 47, 229, 0.719)",
-  "rgba(229, 47, 111, 0.719)",
-  "rgba(208, 229, 47, 0.719)",
-  "rgba(47, 229, 47, 0.719)"
+  "rgb(214, 154, 222)", 
+  "rgb(106, 156, 137)",
+  "rgb(255, 180, 162)",
+  "rgb(80, 141, 78)",
+  "rgb(252, 248, 243)",
+  "rgb(188, 163, 127)"
 ];
 
 export const MenuItem = () => {
@@ -24,6 +24,7 @@ export const MenuItem = () => {
   return (
     <>
       <li> <NavLink to="/" className="navLink"> Home </NavLink> </li>
+      <li> <NavLink to="/room" className="navLink"> Rooms </NavLink> </li>
       <li> <NavLink to="/login" className="navLink"> Login </NavLink> </li>
       <li> <NavLink to="/register" className="navLink"> Register </NavLink> </li>
       <li> <IoColorPaletteSharp className="themeBtn" onClick={handleChangeTheme} /> </li>

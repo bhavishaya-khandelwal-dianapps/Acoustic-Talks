@@ -79,10 +79,11 @@ const login = async (req, res) => {
 
         const data = await userService.login(req.body);
 
-        res.cookie("token", data.token, {
-            httpOnly: true,  // Prevents client-side access (XSS protection)
-            sameSite: "Strict",  // Prevents CSRF attacks
-            encode: String,  // Store the token as a raw string (prevents URL encoding)
+        //* Store token in a cookie
+        res.cookie("token", `${data.token}`, {
+            httpOnly : false, 
+            secure : false, 
+            maxAge : 60 * 60 * 1000
         });
           
 

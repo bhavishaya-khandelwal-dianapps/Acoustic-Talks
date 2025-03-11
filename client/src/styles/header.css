@@ -39,12 +39,15 @@
     width: 12rem;
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 2%;
     z-index: 2;
     transition: height 0.5s ease-in-out;
     animation: menuBoxAnimation 0.5s ease-in-out;
     border-radius: 2rem;
     background-color: var(--color);
+    border : 3px solid rgb(28, 28, 28);
+    outline : 2px solid var(--color);
+    opacity: 0.9;
 }
 
 .menuBox ul {

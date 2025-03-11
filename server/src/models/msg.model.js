@@ -15,12 +15,9 @@ const msgSchema = new mongoose.Schema(
             type : String, 
             trim : true
         },
-        [COMMON_CONSTANTS.ROOM_NAME] : {
-            type : String, 
-            trim : true, 
-            uppercase : true,
-            unique : true,
-            default : null 
+        [COMMON_CONSTANTS.ROOM_ID] : {
+            type : String,
+            default : null
         }
     },
     {

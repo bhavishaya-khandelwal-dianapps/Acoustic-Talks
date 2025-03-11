@@ -27,6 +27,7 @@ export const Login = () => {
         headers : {
           "Content-Type" : "application/json"
         },
+        credentials : 'include', 
         body : JSON.stringify(credentials)
       });
 
@@ -37,7 +38,7 @@ export const Login = () => {
       }
       if(data.status === true) {
         toast.success("User logged-in successfully");
-
+        localStorage.setItem("userDetails", JSON.stringify((data.data.user._id)));
         setTimeout(() => {
           navigate("/");
         }, 1500);

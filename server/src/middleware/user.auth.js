@@ -6,8 +6,6 @@ const User = require("../models/user.model.js");
 const auth = async (req, res, next) => {
     try {
         let token = req.cookies.token;
-        console.log("req.cookie =", req.cookies.token);
-        console.log("my TOKEN =", token);
         
         if(!token) {
             return res.status(400).send({
